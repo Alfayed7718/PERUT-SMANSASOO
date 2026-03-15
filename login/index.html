@@ -39,7 +39,7 @@
           <button type="submit" class="btn">Login</button>
         </div>
         <div>
-          <a href="/index.html" class="btn-ber">Kembali ke Beranda</a>
+          <a href="../index.html" class="btn-ber">Kembali ke Beranda</a>
         </div>
       </form>
     </div>
@@ -99,7 +99,8 @@
 
         // Arahkan ke halaman sesuai level
         if (level === "siswa") {
-          window.location.href = "/index.html";
+          // Gunakan path relatif agar tetap bekerja di GitHub Pages (project page)
+          window.location.href = "../index.html";
         } else if (level === "kurir") {
           window.location.href = "../index-kurir.html";
         }
